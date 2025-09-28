@@ -4,9 +4,9 @@ pageInfo:
   navLinks:
     - title: Voltar pro Site
       path: https://www.cafecomcyber.com.br/
-      target: newtab
-  logo: https://img.icons8.com/?size=100&id=nk7tDNzEkDgu&format=png&color=000000
-  footerText: Café com Cyber | 2025
+      target: sametab
+  logo: https://cafecomcyber.com.br/favicon.ico
+  footerText: CCC | 2025
 appConfig:
   theme: nord-frost
   layout: auto
