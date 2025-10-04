@@ -1,3 +1,88 @@
+error log no dashy:
+
+[22:49:10] Failed to parse YAML: unidentified alias "ref_25" (294:16)
+
+ 291 |       - *ref_22
+ 292 |       - *ref_23
+ 293 |       - *ref_24
+ 294 |       - *ref_25
+----------------------^
+ 295 |       - *ref_26
+ 296 |   - name: Other Utils
+[22:49:10] Failed to parse YAML: unidentified alias "ref_25" (294:16)
+
+ 291 |       - *ref_22
+ 292 |       - *ref_23
+ 293 |       - *ref_24
+ 294 |       - *ref_25
+----------------------^
+ 295 |       - *ref_26
+ 296 |   - name: Other Utils
+[22:49:10] Failed to parse YAML: unidentified alias "ref_25" (294:16)
+
+ 291 |       - *ref_22
+ 292 |       - *ref_23
+ 293 |       - *ref_24
+ 294 |       - *ref_25
+----------------------^
+ 295 |       - *ref_26
+ 296 |   - name: Other Utils
+[22:50:28] Failed to parse YAML: unidentified alias "ref_25" (294:16)
+
+ 291 |       - *ref_22
+ 292 |       - *ref_23
+ 293 |       - *ref_24
+ 294 |       - *ref_25
+----------------------^
+ 295 |       - *ref_26
+ 296 |   - name: Other Utils
+[22:50:28] Failed to parse YAML: unidentified alias "ref_25" (294:16)
+
+ 291 |       - *ref_22
+ 292 |       - *ref_23
+ 293 |       - *ref_24
+ 294 |       - *ref_25
+----------------------^
+ 295 |       - *ref_26
+ 296 |   - name: Other Utils
+[22:50:28] Failed to parse YAML: unidentified alias "ref_25" (294:16)
+
+ 291 |       - *ref_22
+ 292 |       - *ref_23
+ 293 |       - *ref_24
+ 294 |       - *ref_25
+----------------------^
+ 295 |       - *ref_26
+ 296 |   - name: Other Utils
+[22:51:42] Failed to parse YAML: unidentified alias "ref_26" (295:16)
+
+ 292 |       - *ref_23
+ 293 |       - *ref_24
+ 294 |       - *ref_25
+ 295 |       - *ref_26
+----------------------^
+ 296 |   - name: Other Utils
+ 297 |     icon: fas fa-wrench
+[22:51:42] Failed to parse YAML: unidentified alias "ref_26" (295:16)
+
+ 292 |       - *ref_23
+ 293 |       - *ref_24
+ 294 |       - *ref_25
+ 295 |       - *ref_26
+----------------------^
+ 296 |   - name: Other Utils
+ 297 |     icon: fas fa-wrench
+[22:51:42] Failed to parse YAML: unidentified alias "ref_26" (295:16)
+
+ 292 |       - *ref_23
+ 293 |       - *ref_24
+ 294 |       - *ref_25
+ 295 |       - *ref_26
+----------------------^
+ 296 |   - name: Other Utils
+ 297 |     icon: fas fa-wrench
+
+código implementado em produção:
 pageInfo:
   title: Links Úteis
   description: Café com Cyber
