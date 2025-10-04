@@ -280,7 +280,7 @@ sections:
         url: https://ix.br/trafego/agregado
         target: newtab
         id: 3_1512_statusixbr
-      - &ref_26
+      - &ref_25
         title: Updown
         icon: https://updown.io/favicon.ico
         url: https://updown.io/
