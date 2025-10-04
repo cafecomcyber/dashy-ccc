@@ -44,7 +44,7 @@ appConfig:
     enableGuestAccess: true
     users:
       - user: admin
-        hash: 5e884898da28047151d0e56f8dc6292773603d0d6aabbdd62a11ef721d1542d8
+        hash: 186bafbc99c9f044ce61fd737c0a94dd7584040674b499b38895f8ed5d00002d
         type: admin
     enableOidc: false
     oidc:
