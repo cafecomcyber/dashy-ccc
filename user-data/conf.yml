@@ -7,6 +7,7 @@ pageInfo:
       target: sametab
   logo: https://cafecomcyber.com.br/favicon.ico
   footerText: CCC | 2025
+
 appConfig:
   theme: default
   layout: auto
@@ -31,15 +32,21 @@ appConfig:
     searchBangs: {}
   enableFontAwesome: true
   enableMaterialDesignIcons: true
+  
+  # CONFIGURAÇÕES DE SEGURANÇA COM ACESSO ADMIN
   hideComponents:
     hideHeading: false
     hideNav: false
     hideSearch: false
-    hideSettings: false
+    hideSettings: false         # Mantém visível para admin
     hideFooter: true
+  
   auth:
-    enableGuestAccess: false
-    users: []
+    enableGuestAccess: true     # Permite acesso guest (sem edição)
+    users:
+      - user: admin             # Seu usuário admin
+        hash: 5e884898da28047151d0e56f8dc6292773603d0d6aabbdd62a11ef721d1542d8  # Senha: "password" - MUDE ISSO!
+        type: admin
     enableOidc: false
     oidc:
       adminRole: 'false'
@@ -49,18 +56,20 @@ appConfig:
       userHeader: ''
       proxyWhitelist: []
     enableKeycloak: false
+  
   showSplashScreen: false
-  preventWriteToDisk: false
-  preventLocalSave: false
-  disableConfiguration: false
-  disableConfigurationForNonAdmin: true
-  allowConfigEdit: false
+  preventWriteToDisk: false     # MUDADO: Permite salvar quando admin
+  preventLocalSave: false       # MUDADO: Permite salvar quando admin
+  disableConfiguration: false   # MUDADO: Permite config para admin
+  disableConfigurationForNonAdmin: true  # Bloqueia config para guests
+  allowConfigEdit: true         # MUDADO: Permite edição para admin
   enableServiceWorker: false
-  disableContextMenu: false
-  disableUpdateChecks: false
+  disableContextMenu: true      # Desabilita menu de contexto para todos
+  disableUpdateChecks: false    # Permite ver updates
   disableSmartSort: false
   enableErrorReporting: false
   statusCheckInterval: 0
+
 sections:
   - name: Search Engines Web
     icon: fas fa-cogs
@@ -121,6 +130,7 @@ sections:
       - *ref_4
       - *ref_5
       - *ref_6
+
   - name: IA
     icon: fas fa-robot
     displayData:
@@ -174,6 +184,7 @@ sections:
       - *ref_10
       - *ref_11
       - *ref_12
+
   - name: OSINT
     icon: fas fa-user-secret
     items:
@@ -246,6 +257,7 @@ sections:
       - *ref_18
       - *ref_19
       - *ref_20
+
   - name: Services Status
     icon: fas fa-check-circle
     displayData:
@@ -292,6 +304,7 @@ sections:
       - *ref_23
       - *ref_24
       - *ref_25
+
   - name: Other Utils
     icon: fas fa-wrench
     displayData:
@@ -355,6 +368,7 @@ sections:
       - *ref_31
       - *ref_32
       - *ref_33
+
   - name: Security Services
     displayData:
       sortBy: default
@@ -372,6 +386,7 @@ sections:
     icon: fas fa-shield-alt
     filteredItems:
       - *ref_34
+
   - name: Tools
     icon: fas fa-tools
     displayData:
@@ -397,6 +412,7 @@ sections:
     filteredItems:
       - *ref_35
       - *ref_36
+
   - name: Learning
     displayData:
       sortBy: alphabetical
