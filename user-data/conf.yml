@@ -291,18 +291,11 @@ sections:
         url: https://ix.br/trafego/agregado
         target: newtab
         id: 3_1512_statusixbr
-      - &ref_25
-        title: Updown
-        icon: https://updown.io/favicon.ico
-        url: https://updown.io/
-        target: newtab
-        id: 5_1512_updown
     filteredItems:
       - *ref_21
       - *ref_22
       - *ref_23
       - *ref_24
-      - *ref_25
 
   - name: Other Utils
     icon: fas fa-wrench
