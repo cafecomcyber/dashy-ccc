@@ -33,19 +33,18 @@ appConfig:
   enableFontAwesome: true
   enableMaterialDesignIcons: true
   
-  # CONFIGURAÇÕES DE SEGURANÇA COM ACESSO ADMIN
   hideComponents:
     hideHeading: false
     hideNav: false
     hideSearch: false
-    hideSettings: false         # Mantém visível para admin
+    hideSettings: false
     hideFooter: true
   
   auth:
-    enableGuestAccess: true     # Permite acesso guest (sem edição)
+    enableGuestAccess: true
     users:
-      - user: admin             # Seu usuário admin
-        hash: 5e884898da28047151d0e56f8dc6292773603d0d6aabbdd62a11ef721d1542d8  # Senha: "password" - MUDE ISSO!
+      - user: admin
+        hash: 5e884898da28047151d0e56f8dc6292773603d0d6aabbdd62a11ef721d1542d8
         type: admin
     enableOidc: false
     oidc:
@@ -58,14 +57,14 @@ appConfig:
     enableKeycloak: false
   
   showSplashScreen: false
-  preventWriteToDisk: false     # MUDADO: Permite salvar quando admin
-  preventLocalSave: false       # MUDADO: Permite salvar quando admin
-  disableConfiguration: false   # MUDADO: Permite config para admin
-  disableConfigurationForNonAdmin: true  # Bloqueia config para guests
-  allowConfigEdit: true         # MUDADO: Permite edição para admin
+  preventWriteToDisk: false
+  preventLocalSave: false
+  disableConfiguration: false
+  disableConfigurationForNonAdmin: true
+  allowConfigEdit: true
   enableServiceWorker: false
-  disableContextMenu: true      # Desabilita menu de contexto para todos
-  disableUpdateChecks: false    # Permite ver updates
+  disableContextMenu: true
+  disableUpdateChecks: false
   disableSmartSort: false
   enableErrorReporting: false
   statusCheckInterval: 0
@@ -187,6 +186,12 @@ sections:
 
   - name: OSINT
     icon: fas fa-user-secret
+    displayData:
+      sortBy: alphabetical
+      rows: 1
+      cols: 1
+      collapsed: true
+      hideForGuests: false
     items:
       - &ref_13
         title: Shodan
@@ -242,12 +247,6 @@ sections:
         url: https://find.osint-tool.com/
         target: newtab
         id: 7_397_findosinttool
-    displayData:
-      sortBy: alphabetical
-      rows: 1
-      cols: 1
-      collapsed: true
-      hideForGuests: false
     filteredItems:
       - *ref_13
       - *ref_14
@@ -370,6 +369,7 @@ sections:
       - *ref_33
 
   - name: Security Services
+    icon: fas fa-shield-alt
     displayData:
       sortBy: default
       rows: 1
@@ -383,7 +383,6 @@ sections:
         url: https://dashboard.gitguardian.com/
         target: newtab
         id: 0_1724_gitguardian
-    icon: fas fa-shield-alt
     filteredItems:
       - *ref_34
 
@@ -414,6 +413,7 @@ sections:
       - *ref_36
 
   - name: Learning
+    icon: fas fa-book
     displayData:
       sortBy: alphabetical
       rows: 1
@@ -430,4 +430,3 @@ sections:
         id: 0_816_pwncollege
     filteredItems:
       - *ref_37
-    icon: fas fa-book
