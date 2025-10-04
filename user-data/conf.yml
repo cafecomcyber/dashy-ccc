@@ -280,16 +280,10 @@ sections:
         url: https://ix.br/trafego/agregado
         target: newtab
         id: 3_1512_statusixbr
-      - &ref_25
-        title: OPEN DC
-        icon: https://opendatacenter.com.br/assets/imagens/sobre-nos/hero-nuvem.png
-        url: https://status.opendata.center/
-        target: newtab
-        id: 4_1512_opendc
       - &ref_26
         title: Updown
         icon: https://updown.io/favicon.ico
-        url: https://updown.io/p/9qrbr
+        url: https://updown.io/
         target: newtab
         id: 5_1512_updown
     filteredItems:
