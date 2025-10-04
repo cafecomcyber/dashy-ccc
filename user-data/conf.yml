@@ -292,7 +292,6 @@ sections:
       - *ref_23
       - *ref_24
       - *ref_25
-      - *ref_26
   - name: Other Utils
     icon: fas fa-wrench
     displayData:
