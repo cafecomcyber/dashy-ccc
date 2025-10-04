@@ -8,7 +8,7 @@ pageInfo:
   logo: https://cafecomcyber.com.br/favicon.ico
   footerText: CCC | 2025
 appConfig:
-  theme: nord-frost
+  theme: default
   layout: auto
   iconSize: medium
   customColors:
