@@ -303,7 +303,6 @@ sections:
       - *ref_23
       - *ref_24
       - *ref_25
-
   - name: Other Utils
     icon: fas fa-wrench
     displayData:
@@ -367,7 +366,6 @@ sections:
       - *ref_31
       - *ref_32
       - *ref_33
-
   - name: Security Services
     icon: fas fa-shield-alt
     displayData:
@@ -411,7 +409,6 @@ sections:
     filteredItems:
       - *ref_35
       - *ref_36
-
   - name: Learning
     icon: fas fa-book
     displayData:
