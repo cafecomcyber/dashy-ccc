@@ -38,12 +38,15 @@ appConfig:
     hideHeading: false
     hideNav: false
     hideSearch: false
-    hideSettings: true
-    hideFooter: true
+    hideSettings: false
+    hideFooter: false
   
   auth:
-    enableGuestAccess: false
-    users: []
+    enableGuestAccess: true
+    users:
+      - user: admin
+        hash: 4d40b1b9c89ec401abb8176f8e4c1f4476b988a250423cf1bc5074c5f1f42d81
+        type: admin
     enableOidc: false
     oidc: {}
     enableHeaderAuth: false
@@ -56,7 +59,7 @@ appConfig:
   preventWriteToDisk: false
   preventLocalSave: false
   disableConfiguration: false
-  disableConfigurationForNonAdmin: false
+  disableConfigurationForNonAdmin: true
   allowConfigEdit: true
   enableServiceWorker: false
   disableContextMenu: false
