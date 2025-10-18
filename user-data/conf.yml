@@ -39,6 +39,7 @@ appConfig:
     hideSearch: false
     hideSettings: false
     hideFooter: false
+    hideConfigEditor: false
   
   auth:
     enableGuestAccess: true
@@ -68,6 +69,7 @@ appConfig:
   disableSmartSort: false
   enableErrorReporting: false
   statusCheckInterval: 300
+  enableConfigEditor: true
 
 sections:
   - name: Search Engines Web
