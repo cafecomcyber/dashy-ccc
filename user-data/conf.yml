@@ -43,12 +43,7 @@ appConfig:
   
   auth:
     enableGuestAccess: true
-    users:
-      - user: admin
-        hash: 186bafbc99c9f044ce61fd737c0a94dd7584040674b499b38895f8ed5d00002d
-        type: admin
-        permissions:
-          allowConfigEdit: true
+    users: []
     enableOidc: false
     oidc:
       adminRole: 'false'
@@ -63,7 +58,7 @@ appConfig:
   preventWriteToDisk: false
   preventLocalSave: false
   disableConfiguration: false
-  disableConfigurationForNonAdmin: true
+  disableConfigurationForNonAdmin: false
   allowConfigEdit: true
   enableServiceWorker: true
   disableContextMenu: false
