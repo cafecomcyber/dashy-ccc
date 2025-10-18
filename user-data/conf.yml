@@ -47,6 +47,8 @@ appConfig:
       - user: admin
         hash: 186bafbc99c9f044ce61fd737c0a94dd7584040674b499b38895f8ed5d00002d
         type: admin
+        permissions:
+          allowConfigEdit: true
     enableOidc: false
     oidc:
       adminRole: 'false'
@@ -70,6 +72,7 @@ appConfig:
   enableErrorReporting: false
   statusCheckInterval: 300
   enableConfigEditor: true
+  allowConfigEditing: true
 
 sections:
   - name: Search Engines Web
