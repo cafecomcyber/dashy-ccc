@@ -41,7 +41,7 @@ appConfig:
     hideSettings: false
     hideFooter: false
   auth:
-  enableGuestAccess: true
+  enableGuestAccess: false
   #users: []
 
   # --- INÍCIO DO BLOCO DE AUTENTICAÇÃO ---
