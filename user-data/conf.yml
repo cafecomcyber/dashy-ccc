@@ -42,18 +42,15 @@ appConfig:
     hideFooter: false
   
   auth:
-    enableGuestAccess: true
-    users:
-      - user: admin
-        hash: 903084bfa90e89132c386b42d8c765f14b1d4d947162bbb682c9c627fb036c63
-        type: admin
-    enableOidc: false
-    oidc: {}
-    enableHeaderAuth: false
-    headerAuth:
-      userHeader: ''
-      proxyWhitelist: []
-    enableKeycloak: false
+  enableGuestAccess: true
+  users: []
+  enableOidc: false
+  oidc: {}
+  enableHeaderAuth: false
+  headerAuth:
+    userHeader: ''
+    proxyWhitelist: []
+  enableKeycloak: false
   
   showSplashScreen: false
   preventWriteToDisk: false
