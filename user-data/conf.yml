@@ -41,9 +41,9 @@ appConfig:
     hideSettings: false
     hideFooter: false
   
- auth:
+auth:
   enableGuestAccess: true
-#  users: []
+  users: []
   enableOidc: false
   oidc: {}
   enableHeaderAuth: false
@@ -53,10 +53,10 @@ appConfig:
   enableKeycloak: false
 
   # --- INÍCIO DO BLOCO DE AUTENTICAÇÃO ---
-   users:
-     - user: admin
-       hash: 903084bfa90e89132c386b42d8c765f14b1d4d947162bbb682c9c627fb036c63
-       type: admin
+  # users:
+  #   - user: admin
+  #     hash: 903084bfa90e89132c386b42d8c765f14b1d4d947162bbb682c9c627fb036c63
+  #     type: admin
   # enableOidc: false
   # oidc: {}
   # enableHeaderAuth: false
@@ -65,7 +65,6 @@ appConfig:
   #   proxyWhitelist: []
   # enableKeycloak: false
   # --- FIM DO BLOCO DE AUTENTICAÇÃO ---
-
   
   showSplashScreen: false
   preventWriteToDisk: false
