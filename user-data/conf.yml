@@ -42,14 +42,21 @@ appConfig:
     hideFooter: false
   
   auth:
-    enableGuestAccess: true
-    
+    enableGuestAccess: false
+    users: []
+    enableOidc: false
+    oidc: {}
+    enableHeaderAuth: false
+    headerAuth:
+      userHeader: ''
+      proxyWhitelist: []
+    enableKeycloak: false
   showSplashScreen: false
   preventWriteToDisk: false
   preventLocalSave: false
   disableConfiguration: false
   disableConfigurationForNonAdmin: false
-  allowConfigEdit: false
+  allowConfigEdit: true
   enableServiceWorker: false
   disableContextMenu: false
   disableUpdateChecks: false
