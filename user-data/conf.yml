@@ -430,3 +430,22 @@ sections:
       - *ref_34
       - *ref_35
       - *ref_36
+  - name: Whois
+    icon: fas fa-search
+    displayData:
+      sortBy: alphabetical
+      rows: 1
+      cols: 1
+      collapsed: true
+      hideForGuests: false
+    items:
+      - &ref_37
+        title: DomainTools
+        icon: https://whois.domaintools.com/favicon.ico
+        url: https://whois.domaintools.com/
+        target: newtab
+        tags:
+          - whois
+        id: 0_522_domaintools
+    filteredItems:
+      - *ref_37
