@@ -7,11 +7,10 @@ pageInfo:
       target: sametab
   logo: https://cafecomcyber.com.br/favicon.ico
   footerText: CCC | 2025
-
 appConfig:
   theme: default
   layout: auto
-  iconSize: medium
+  iconSize: small
   customColors:
     deep-ocean:
       primary: '#aabbc3'
@@ -33,14 +32,12 @@ appConfig:
     searchBangs: {}
   enableFontAwesome: true
   enableMaterialDesignIcons: true
-  
   hideComponents:
     hideHeading: false
     hideNav: false
     hideSearch: false
     hideSettings: false
     hideFooter: false
-  
   auth:
     enableGuestAccess: false
     users: []
@@ -62,7 +59,6 @@ appConfig:
   disableUpdateChecks: false
   disableSmartSort: false
   enableErrorReporting: false
-
 sections:
   - name: Search Engines Web
     icon: fas fa-cogs
@@ -73,42 +69,56 @@ sections:
       collapsed: true
       hideForGuests: false
     items:
-      - title: TOP
+      - &ref_0
+        title: TOP
         icon: https://top.nic.br/favicon.ico
         url: https://top.nic.br/
         target: newtab
         id: 0_1661_top
-      - title: crt.sh
+      - &ref_1
+        title: crt.sh
         icon: https://crt.sh/favicon.ico
         url: https://crt.sh/
         target: newtab
         id: 1_1661_crtsh
-      - title: ISP Tools
+      - &ref_2
+        title: ISP Tools
         icon: https://www.isp.tools/images/icons/favicon.png
         url: https://www.isp.tools/
         target: newtab
         id: 2_1661_isptools
-      - title: BGP Tools
+      - &ref_3
+        title: BGP Tools
         icon: fas fa-globe
         url: https://bgp.tools/
         target: newtab
         id: 3_1661_bgptools
-      - title: BGP Toolkit
+      - &ref_4
+        title: BGP Toolkit
         icon: https://bgp.he.net/favicon.ico
         url: https://bgp.he.net
         target: newtab
         id: 4_1661_bgptoolkit
-      - title: Builtwith
+      - &ref_5
+        title: Builtwith
         icon: https://img.icons8.com/?size=100&id=102562&format=png&color=000000
         url: https://builtwith.com/
         target: newtab
         id: 5_1661_builtwith
-      - title: Mxtoolbox
+      - &ref_6
+        title: Mxtoolbox
         icon: https://mxtoolbox.com/favicon.ico
         url: https://mxtoolbox.com/
         target: newtab
         id: 6_1661_mxtoolbox
-
+    filteredItems:
+      - *ref_0
+      - *ref_1
+      - *ref_2
+      - *ref_3
+      - *ref_4
+      - *ref_5
+      - *ref_6
   - name: IA
     icon: fas fa-robot
     displayData:
@@ -118,37 +128,50 @@ sections:
       collapsed: true
       hideForGuests: false
     items:
-      - title: Presentations
-        icon: https://cdn.prod.website-files.com/63ca9a05fdc83042565f605c/63fedbd8e101652ba74f55c5_p_ai_32.png
+      - &ref_7
+        title: Presentations
+        icon: >-
+          https://cdn.prod.website-files.com/63ca9a05fdc83042565f605c/63fedbd8e101652ba74f55c5_p_ai_32.png
         url: https://www.presentations.ai/
         target: newtab
         id: 0_138_presentations
-      - title: Claude
+      - &ref_8
+        title: Claude
         icon: https://claude.ai/favicon.ico
         url: https://claude.ai
         target: newtab
         id: 1_138_claude
-      - title: Kimi
+      - &ref_9
+        title: Kimi
         icon: https://statics.moonshot.cn/kimi-web-seo/favicon.ico
         url: https://kimi.moonshot.cn/
         target: newtab
         id: 2_138_kimi
-      - title: Manus
+      - &ref_10
+        title: Manus
         icon: https://manus.im/favicon.ico
         url: https://manus.im
         target: newtab
         id: 3_138_manus
-      - title: Chatgpt
+      - &ref_11
+        title: Chatgpt
         icon: https://chatgpt.com/favicon.ico
         url: https://chatgpt.com
         target: newtab
         id: 4_138_chatgpt
-      - title: Napkin
+      - &ref_12
+        title: Napkin
         icon: https://www.napkin.ai/favicon.ico
         url: https://www.napkin.ai
         target: newtab
         id: 5_138_napkin
-
+    filteredItems:
+      - *ref_7
+      - *ref_8
+      - *ref_9
+      - *ref_10
+      - *ref_11
+      - *ref_12
   - name: OSINT
     icon: fas fa-user-secret
     displayData:
@@ -158,53 +181,61 @@ sections:
       collapsed: true
       hideForGuests: false
     items:
-      - title: Shodan
+      - &ref_13
+        title: Shodan
         description: ''
         icon: https://www.shodan.io/static/img/favicon-60c1b1cd.png
         url: https://www.shodan.io/
         target: newtab
         id: 0_397_shodan
-      - title: IP Checker Info
+      - &ref_14
+        title: IP Checker Info
         description: ''
         icon: https://ip-checker.info/favicon.ico
         url: https://ip-checker.info/
         target: newtab
         id: 1_397_ipcheckerinfo
-      - title: Virustotal
+      - &ref_15
+        title: Virustotal
         description: ''
         icon: https://www.virustotal.com/gui/images/favicon.svg
         url: https://www.virustotal.com/
         target: newtab
         provider: Dashy.to
         id: 2_397_virustotal
-      - title: Web-check
+      - &ref_16
+        title: Web-check
         description: ''
         icon: https://web-check.xyz/favicon.ico
         url: https://web-check.xyz/
         target: newtab
         id: 3_397_webcheck
-      - title: Abuseipdb
-        description: ''
-        icon: https://www.abuseipdb.com/favicon.ico
-        url: https://www.abuseipdb.com/
-        target: newtab
-        id: 4_397_abuseipdb
-      - title: Urlscan.io
+      - &ref_17
+        title: Urlscan.io
         icon: https://urlscan.io/favicon.ico
         url: https://urlscan.io
         target: newtab
-        id: 5_397_urlscanio
-      - title: Fofa Info
+        id: 4_397_urlscanio
+      - &ref_18
+        title: Fofa Info
         icon: https://en.fofa.info/favicon.ico
         url: https://en.fofa.info/
         target: newtab
-        id: 6_397_fofainfo
-      - title: Find osint tool
+        id: 5_397_fofainfo
+      - &ref_19
+        title: Find osint tool
         icon: https://find.osint-tool.com/favicon.ico
         url: https://find.osint-tool.com/
         target: newtab
-        id: 7_397_findosinttool
-
+        id: 6_397_findosinttool
+    filteredItems:
+      - *ref_13
+      - *ref_14
+      - *ref_15
+      - *ref_16
+      - *ref_17
+      - *ref_18
+      - *ref_19
   - name: Services Status
     icon: fas fa-check-circle
     displayData:
@@ -214,27 +245,36 @@ sections:
       collapsed: true
       hideForGuests: false
     items:
-      - title: Downdetector
+      - &ref_20
+        title: Downdetector
         icon: https://cdn2.downdetector.com/db9da631acf98de/icons/favicon.png
         url: https://downdetector.com.br/
         target: newtab
         id: 0_1512_downdetector
-      - title: Microsoft
+      - &ref_21
+        title: Microsoft
         icon: fab fa-microsoft
         url: https://status.cloud.microsoft/
         target: newtab
         id: 1_1512_microsoft
-      - title: Ping.pe
-        icon: https://img.icons8.com/?size=100&id=kYEPh3U5Cod0&format=png&color=000000
+      - &ref_22
+        title: Ping.pe
+        icon: >-
+          https://img.icons8.com/?size=100&id=kYEPh3U5Cod0&format=png&color=000000
         url: https://ping.pe/
         target: newtab
         id: 2_1512_pingpe
-      - title: Status ix.br
+      - &ref_23
+        title: Status ix.br
         icon: https://ix.br/favicon.ico
         url: https://ix.br/trafego/agregado
         target: newtab
         id: 3_1512_statusixbr
-
+    filteredItems:
+      - *ref_20
+      - *ref_21
+      - *ref_22
+      - *ref_23
   - name: Other Utils
     icon: fas fa-wrench
     displayData:
@@ -244,42 +284,60 @@ sections:
       collapsed: true
       hideForGuests: false
     items:
-      - title: Apêndice L
+      - &ref_24
+        title: Apêndice L
         icon: https://www.microsoft.com/favicon.ico?v2
-        url: https://learn.microsoft.com/pt-br/windows-server/identity/ad-ds/plan/appendix-l--events-to-monitor
+        url: >-
+          https://learn.microsoft.com/pt-br/windows-server/identity/ad-ds/plan/appendix-l--events-to-monitor
         target: newtab
         id: 0_1075_apndicel
-      - title: Favicon hash
-        icon: https://img.icons8.com/?size=100&id=KwDPbwT6mZqk&format=png&color=000000
+      - &ref_25
+        title: Favicon hash
+        icon: >-
+          https://img.icons8.com/?size=100&id=KwDPbwT6mZqk&format=png&color=000000
         url: https://favicon-hash.kmsec.uk/
         target: newtab
         id: 1_1075_faviconhash
-      - title: Excalidraw
+      - &ref_26
+        title: Excalidraw
         icon: https://excalidraw.com/favicon.ico
         url: https://excalidraw.com/
         target: newtab
         id: 2_1075_excalidraw
-      - title: MS Update Catalog
+      - &ref_27
+        title: MS Update Catalog
         icon: https://www.microsoft.com/favicon.ico?v2
         url: https://www.catalog.update.microsoft.com/Home.aspx
         target: newtab
         id: 3_1075_msupdatecatalog
-      - title: Códigos ASCII
-        icon: https://img.icons8.com/?size=100&id=3QnmmCRBWaZU&format=png&color=000000
-        url: https://www.freecodecamp.org/portuguese/news/codigos-alt-como-digitar-caracteres-especiais-e-simbolos-do-teclado-no-windows-usando-as-teclas-alt/
+      - &ref_28
+        title: Códigos ASCII
+        icon: >-
+          https://img.icons8.com/?size=100&id=3QnmmCRBWaZU&format=png&color=000000
+        url: >-
+          https://www.freecodecamp.org/portuguese/news/codigos-alt-como-digitar-caracteres-especiais-e-simbolos-do-teclado-no-windows-usando-as-teclas-alt/
         target: newtab
         id: 4_1075_cdigosascii
-      - title: Awesome icons
+      - &ref_29
+        title: Awesome icons
         icon: https://fontawesome.com/favicon.ico
         url: https://fontawesome.com/icons
         target: newtab
         id: 5_1075_awesomeicons
-      - title: Notion
+      - &ref_30
+        title: Notion
         icon: https://www.notion.com/front-static/favicon.ico
         url: https://www.notion.so
         target: newtab
         id: 6_1075_notion
-
+    filteredItems:
+      - *ref_24
+      - *ref_25
+      - *ref_26
+      - *ref_27
+      - *ref_28
+      - *ref_29
+      - *ref_30
   - name: Security Services
     icon: fas fa-shield-alt
     displayData:
@@ -289,12 +347,14 @@ sections:
       collapsed: true
       hideForGuests: false
     items:
-      - title: Gitguardian
+      - &ref_31
+        title: Gitguardian
         icon: https://dashboard.gitguardian.com/favicon.ico
         url: https://dashboard.gitguardian.com/
         target: newtab
         id: 0_1724_gitguardian
-
+    filteredItems:
+      - *ref_31
   - name: Tools
     icon: fas fa-tools
     displayData:
@@ -304,17 +364,22 @@ sections:
       collapsed: true
       hideForGuests: false
     items:
-      - title: vmPing
-        icon: https://raw.githubusercontent.com/r-smith/vmPing/refs/heads/master/vmPing/vmPing.ico
+      - &ref_32
+        title: vmPing
+        icon: >-
+          https://raw.githubusercontent.com/r-smith/vmPing/refs/heads/master/vmPing/vmPing.ico
         url: https://github.com/r-smith/vmPing
         target: newtab
         id: 0_529_vmping
-      - title: Procmon Sysinternals
+      - &ref_33
+        title: Procmon Sysinternals
         icon: https://learn.microsoft.com/favicon.ico
         url: https://learn.microsoft.com/pt-br/sysinternals/downloads/procmon
         target: newtab
         id: 1_529_procmonsysinternals
-
+    filteredItems:
+      - *ref_32
+      - *ref_33
   - name: Learning
     icon: fas fa-book
     displayData:
@@ -324,8 +389,31 @@ sections:
       collapsed: true
       hideForGuests: false
     items:
-      - title: pwn.college
-        icon: https://pwn.college/themes/dojo_theme/static/img/favicon.png?d=810ada56
+      - &ref_34
+        title: pwn.college
+        icon: >-
+          https://pwn.college/themes/dojo_theme/static/img/favicon.png?d=810ada56
         url: https://pwn.college/
         target: newtab
         id: 0_816_pwncollege
+    filteredItems:
+      - *ref_34
+  - name: Reputação
+    icon: fas fa-user-secret
+    displayData:
+      sortBy: alphabetical
+      rows: 1
+      cols: 1
+      collapsed: true
+      hideForGuests: false
+    items:
+      - &ref_35
+        title: Abuseipdb
+        icon: https://www.abuseipdb.com/favicon.ico
+        url: https://www.abuseipdb.com/
+        target: newtab
+        tags:
+          - osint
+        id: 0_1194_abuseipdb
+    filteredItems:
+      - *ref_35
