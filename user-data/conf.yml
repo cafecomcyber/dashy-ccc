@@ -414,6 +414,17 @@ sections:
         tags:
           - osint
         id: 1_1194_virustotal
+      - &ref_36
+        title: BrightCloud
+        description: Consulta de reputação de IPs
+        icon: >-
+          https://www-cdn.webroot.com/8716/9094/3582/BrightCloud_by_OpenText_-_Logo_-_Normal.png
+        url: https://brightcloud.com/tools/url-ip-lookup.php
+        target: newtab
+        tags:
+          - osint
+        id: 2_1194_brightcloud
     filteredItems:
       - *ref_34
       - *ref_35
+      - *ref_36
