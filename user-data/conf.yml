@@ -400,6 +400,7 @@ sections:
     items:
       - &ref_34
         title: Abuseipdb
+        description: Consulta de report de abuso de IPs
         icon: https://www.abuseipdb.com/favicon.ico
         url: https://www.abuseipdb.com/
         target: newtab
@@ -408,6 +409,7 @@ sections:
         id: 0_1194_abuseipdb
       - &ref_35
         title: VirusTotal
+        description: Análise de arquivos e URL para verificar malwares e reputação
         icon: https://www.virustotal.com/gui/images/favicon.svg
         url: https://www.virustotal.com
         target: newtab
