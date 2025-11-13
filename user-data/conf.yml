@@ -53,7 +53,7 @@ appConfig:
   preventLocalSave: false
   disableConfiguration: true
   disableConfigurationForNonAdmin: false
-  allowConfigEdit: false
+  allowConfigEdit: true
   enableServiceWorker: false
   disableContextMenu: false
   disableUpdateChecks: false
