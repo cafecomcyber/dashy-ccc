@@ -220,6 +220,14 @@ sections:
         url: https://find.osint-tool.com/
         target: newtab
         id: 5_397_findosinttool
+      - &ref_19
+        title: awesome-osint
+        icon: https://github.com/favicon.ico
+        url: https://github.com/jivoi/awesome-osint
+        target: newtab
+        tags:
+          - osint
+        id: 6_397_awesomeosint
     filteredItems:
       - *ref_13
       - *ref_14
@@ -227,6 +235,7 @@ sections:
       - *ref_16
       - *ref_17
       - *ref_18
+      - *ref_19
   - name: Services Status
     icon: fas fa-check-circle
     displayData:
@@ -236,36 +245,36 @@ sections:
       collapsed: true
       hideForGuests: false
     items:
-      - &ref_19
+      - &ref_20
         title: Downdetector
         icon: https://cdn2.downdetector.com/db9da631acf98de/icons/favicon.png
         url: https://downdetector.com.br/
         target: newtab
         id: 0_1512_downdetector
-      - &ref_20
+      - &ref_21
         title: Microsoft
         icon: fab fa-microsoft
         url: https://status.cloud.microsoft/
         target: newtab
         id: 1_1512_microsoft
-      - &ref_21
+      - &ref_22
         title: Ping.pe
         icon: >-
           https://img.icons8.com/?size=100&id=kYEPh3U5Cod0&format=png&color=000000
         url: https://ping.pe/
         target: newtab
         id: 2_1512_pingpe
-      - &ref_22
+      - &ref_23
         title: Status ix.br
         icon: https://ix.br/favicon.ico
         url: https://ix.br/trafego/agregado
         target: newtab
         id: 3_1512_statusixbr
     filteredItems:
-      - *ref_19
       - *ref_20
       - *ref_21
       - *ref_22
+      - *ref_23
   - name: Other Utils
     icon: fas fa-wrench
     displayData:
@@ -275,33 +284,33 @@ sections:
       collapsed: true
       hideForGuests: false
     items:
-      - &ref_23
+      - &ref_24
         title: Apêndice L
         icon: https://www.microsoft.com/favicon.ico?v2
         url: >-
           https://learn.microsoft.com/pt-br/windows-server/identity/ad-ds/plan/appendix-l--events-to-monitor
         target: newtab
         id: 0_1075_apndicel
-      - &ref_24
+      - &ref_25
         title: Favicon hash
         icon: >-
           https://img.icons8.com/?size=100&id=KwDPbwT6mZqk&format=png&color=000000
         url: https://favicon-hash.kmsec.uk/
         target: newtab
         id: 1_1075_faviconhash
-      - &ref_25
+      - &ref_26
         title: Excalidraw
         icon: https://excalidraw.com/favicon.ico
         url: https://excalidraw.com/
         target: newtab
         id: 2_1075_excalidraw
-      - &ref_26
+      - &ref_27
         title: MS Update Catalog
         icon: https://www.microsoft.com/favicon.ico?v2
         url: https://www.catalog.update.microsoft.com/Home.aspx
         target: newtab
         id: 3_1075_msupdatecatalog
-      - &ref_27
+      - &ref_28
         title: Códigos ASCII
         icon: >-
           https://img.icons8.com/?size=100&id=3QnmmCRBWaZU&format=png&color=000000
@@ -309,26 +318,26 @@ sections:
           https://www.freecodecamp.org/portuguese/news/codigos-alt-como-digitar-caracteres-especiais-e-simbolos-do-teclado-no-windows-usando-as-teclas-alt/
         target: newtab
         id: 4_1075_cdigosascii
-      - &ref_28
+      - &ref_29
         title: Awesome icons
         icon: https://fontawesome.com/favicon.ico
         url: https://fontawesome.com/icons
         target: newtab
         id: 5_1075_awesomeicons
-      - &ref_29
+      - &ref_30
         title: Notion
         icon: https://www.notion.com/front-static/favicon.ico
         url: https://www.notion.so
         target: newtab
         id: 6_1075_notion
     filteredItems:
-      - *ref_23
       - *ref_24
       - *ref_25
       - *ref_26
       - *ref_27
       - *ref_28
       - *ref_29
+      - *ref_30
   - name: Security Services
     icon: fas fa-shield-alt
     displayData:
@@ -338,14 +347,14 @@ sections:
       collapsed: true
       hideForGuests: false
     items:
-      - &ref_30
+      - &ref_31
         title: Gitguardian
         icon: https://dashboard.gitguardian.com/favicon.ico
         url: https://dashboard.gitguardian.com/
         target: newtab
         id: 0_1724_gitguardian
     filteredItems:
-      - *ref_30
+      - *ref_31
   - name: Tools
     icon: fas fa-tools
     displayData:
@@ -355,22 +364,22 @@ sections:
       collapsed: true
       hideForGuests: false
     items:
-      - &ref_31
+      - &ref_32
         title: vmPing
         icon: >-
           https://raw.githubusercontent.com/r-smith/vmPing/refs/heads/master/vmPing/vmPing.ico
         url: https://github.com/r-smith/vmPing
         target: newtab
         id: 0_529_vmping
-      - &ref_32
+      - &ref_33
         title: Procmon Sysinternals
         icon: https://learn.microsoft.com/favicon.ico
         url: https://learn.microsoft.com/pt-br/sysinternals/downloads/procmon
         target: newtab
         id: 1_529_procmonsysinternals
     filteredItems:
-      - *ref_31
       - *ref_32
+      - *ref_33
   - name: Learning
     icon: fas fa-book
     displayData:
@@ -380,7 +389,7 @@ sections:
       collapsed: true
       hideForGuests: false
     items:
-      - &ref_33
+      - &ref_34
         title: pwn.college
         icon: >-
           https://pwn.college/themes/dojo_theme/static/img/favicon.png?d=810ada56
@@ -388,7 +397,7 @@ sections:
         target: newtab
         id: 0_816_pwncollege
     filteredItems:
-      - *ref_33
+      - *ref_34
   - name: Reputação
     icon: fas fa-user-secret
     displayData:
@@ -398,7 +407,7 @@ sections:
       collapsed: true
       hideForGuests: false
     items:
-      - &ref_34
+      - &ref_35
         title: Abuseipdb
         description: Consulta de report de abuso de IPs
         icon: https://www.abuseipdb.com/favicon.ico
@@ -407,7 +416,7 @@ sections:
         tags:
           - osint
         id: 0_1194_abuseipdb
-      - &ref_35
+      - &ref_36
         title: VirusTotal
         description: Análise de arquivos e URL para verificar malwares e reputação
         icon: https://www.virustotal.com/gui/images/favicon.svg
@@ -416,7 +425,7 @@ sections:
         tags:
           - osint
         id: 1_1194_virustotal
-      - &ref_36
+      - &ref_37
         title: BrightCloud
         description: Consulta de reputação de IPs
         icon: >-
@@ -427,9 +436,9 @@ sections:
           - osint
         id: 2_1194_brightcloud
     filteredItems:
-      - *ref_34
       - *ref_35
       - *ref_36
+      - *ref_37
   - name: Whois
     icon: fas fa-search
     displayData:
@@ -439,7 +448,7 @@ sections:
       collapsed: true
       hideForGuests: false
     items:
-      - &ref_37
+      - &ref_38
         title: DomainTools
         icon: https://whois.domaintools.com/favicon.ico
         url: https://whois.domaintools.com/
@@ -448,4 +457,4 @@ sections:
           - whois
         id: 0_522_domaintools
     filteredItems:
-      - *ref_37
+      - *ref_38
