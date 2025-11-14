@@ -399,7 +399,7 @@ sections:
     filteredItems:
       - *ref_34
   - name: Reputação
-    icon: fas fa-user-secret
+    icon: fas fa-chart-bar
     displayData:
       sortBy: alphabetical
       rows: 1
