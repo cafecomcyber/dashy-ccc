@@ -463,5 +463,13 @@ sections:
         tags:
           - whois
         id: 0_522_domaintools
+      - &ref_40
+        title: Registro.br
+        description: Whois do Registro.br
+        icon: https://nic.br//docs-assets/images/logo-nicbr.png
+        url: https://registro.br/tecnologia/ferramentas/whois/
+        target: newtab
+        id: 1_522_registrobr
     filteredItems:
       - *ref_39
+      - *ref_40
