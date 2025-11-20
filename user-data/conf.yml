@@ -83,7 +83,8 @@ sections:
         id: 1_1661_crtsh
       - &ref_2
         title: ISP Tools
-        icon: https://www.isp.tools/images/icons/favicon.png
+        icon: >-
+          https://www.isp.tools/wp-content/uploads/2025/08/cropped-icon-32x32.png
         url: https://www.isp.tools/
         target: newtab
         id: 2_1661_isptools
