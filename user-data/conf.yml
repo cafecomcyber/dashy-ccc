@@ -5,6 +5,9 @@ pageInfo:
     - title: Voltar pro Site
       path: https://www.cafecomcyber.com.br/
       target: sametab
+    - title: Linktr.ee
+      path: https://linktr.ee/cafecomcyber
+      target: newtab
   logo: https://cafecomcyber.com.br/favicon.ico
   footerText: CCC | 2025
 appConfig:
