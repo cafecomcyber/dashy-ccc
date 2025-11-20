@@ -470,6 +470,20 @@ sections:
         url: https://registro.br/tecnologia/ferramentas/whois/
         target: newtab
         id: 1_522_registrobr
+      - &ref_41
+        title: Whois.com
+        icon: https://www.whois.com/favicon.ico
+        url: https://www.whois.com/whois/
+        target: newtab
+        id: 2_522_whoiscom
+      - &ref_42
+        title: Mark Monitor
+        icon: https://whois-webform.markmonitor.com/favicon.ico
+        url: https://whois-webform.markmonitor.com/whois/
+        target: newtab
+        id: 3_522_markmonitor
     filteredItems:
       - *ref_39
       - *ref_40
+      - *ref_41
+      - *ref_42
