@@ -378,7 +378,7 @@ sections:
       - &ref_33
         title: vmPing
         icon: >-
-          https://raw.githubusercontent.com/r-smith/vmPing/refs/heads/master/vmPing/vmPing.ico
+          https://img.utdstc.com/icon/0cd/71a/0cd71a1674e209129770b448200c520d086ce6e19c2229f95861040748c97713:100
         url: https://github.com/r-smith/vmPing
         target: newtab
         id: 0_529_vmping
