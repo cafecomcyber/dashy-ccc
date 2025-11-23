@@ -297,6 +297,7 @@ sections:
     items:
       - &ref_25
         title: vmPing
+        description: Network Tools
         icon: >-
           https://img.utdstc.com/icon/0cd/71a/0cd71a1674e209129770b448200c520d086ce6e19c2229f95861040748c97713:100
         url: https://github.com/r-smith/vmPing
