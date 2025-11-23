@@ -1,5 +1,5 @@
 pageInfo:
-  title: Links Úteis
+  title: CCC | Links Úteis
   description: Café com Cyber
   navLinks:
     - title: Voltar pro Site
@@ -286,23 +286,6 @@ sections:
       - *ref_22
       - *ref_23
       - *ref_24
-  - name: Security Services
-    icon: fas fa-shield-alt
-    displayData:
-      sortBy: default
-      rows: 1
-      cols: 1
-      collapsed: true
-      hideForGuests: false
-    items:
-      - &ref_25
-        title: Gitguardian
-        icon: https://dashboard.gitguardian.com/favicon.ico
-        url: https://dashboard.gitguardian.com/
-        target: newtab
-        id: 0_1724_gitguardian
-    filteredItems:
-      - *ref_25
   - name: Tools
     icon: fas fa-tools
     displayData:
@@ -312,22 +295,22 @@ sections:
       collapsed: true
       hideForGuests: false
     items:
-      - &ref_26
+      - &ref_25
         title: vmPing
         icon: >-
           https://img.utdstc.com/icon/0cd/71a/0cd71a1674e209129770b448200c520d086ce6e19c2229f95861040748c97713:100
         url: https://github.com/r-smith/vmPing
         target: newtab
         id: 0_529_vmping
-      - &ref_27
+      - &ref_26
         title: Procmon Sysinternals
         icon: https://learn.microsoft.com/favicon.ico
         url: https://learn.microsoft.com/pt-br/sysinternals/downloads/procmon
         target: newtab
         id: 1_529_procmonsysinternals
     filteredItems:
+      - *ref_25
       - *ref_26
-      - *ref_27
   - name: Learning
     icon: fas fa-book
     displayData:
@@ -337,7 +320,7 @@ sections:
       collapsed: true
       hideForGuests: false
     items:
-      - &ref_28
+      - &ref_27
         title: pwn.college
         icon: >-
           https://pwn.college/themes/dojo_theme/static/img/favicon.png?d=810ada56
@@ -345,7 +328,7 @@ sections:
         target: newtab
         id: 0_816_pwncollege
     filteredItems:
-      - *ref_28
+      - *ref_27
   - name: Reputação
     icon: fas fa-chart-bar
     displayData:
@@ -355,7 +338,7 @@ sections:
       collapsed: true
       hideForGuests: false
     items:
-      - &ref_29
+      - &ref_28
         title: Abuseipdb
         description: Consulta de report de abuso de IPs
         icon: https://www.abuseipdb.com/favicon.ico
@@ -364,7 +347,7 @@ sections:
         tags:
           - osint
         id: 0_1194_abuseipdb
-      - &ref_30
+      - &ref_29
         title: VirusTotal
         description: Análise de arquivos e URL para verificar malwares e reputação
         icon: https://www.virustotal.com/gui/images/favicon.svg
@@ -373,7 +356,7 @@ sections:
         tags:
           - osint
         id: 1_1194_virustotal
-      - &ref_31
+      - &ref_30
         title: BrightCloud
         description: Consulta de reputação de IPs
         icon: >-
@@ -384,9 +367,9 @@ sections:
           - osint
         id: 2_1194_brightcloud
     filteredItems:
+      - *ref_28
       - *ref_29
       - *ref_30
-      - *ref_31
   - name: Whois
     icon: fas fa-search
     displayData:
@@ -396,7 +379,7 @@ sections:
       collapsed: true
       hideForGuests: false
     items:
-      - &ref_32
+      - &ref_31
         title: DomainTools
         icon: https://whois.domaintools.com/favicon.ico
         url: https://whois.domaintools.com/
@@ -404,27 +387,27 @@ sections:
         tags:
           - whois
         id: 0_522_domaintools
-      - &ref_33
+      - &ref_32
         title: Registro.br
         description: Whois do Registro.br
         icon: https://nic.br//docs-assets/images/logo-nicbr.png
         url: https://registro.br/tecnologia/ferramentas/whois/
         target: newtab
         id: 1_522_registrobr
-      - &ref_34
+      - &ref_33
         title: Whois.com
         icon: https://www.whois.com/favicon.ico
         url: https://www.whois.com/whois/
         target: newtab
         id: 2_522_whoiscom
-      - &ref_35
+      - &ref_34
         title: Mark Monitor
         icon: https://whois-webform.markmonitor.com/favicon.ico
         url: https://whois-webform.markmonitor.com/whois/
         target: newtab
         id: 3_522_markmonitor
     filteredItems:
+      - *ref_31
       - *ref_32
       - *ref_33
       - *ref_34
-      - *ref_35
