@@ -425,3 +425,19 @@ sections:
       - *ref_33
       - *ref_34
       - *ref_35
+  - name: Outros
+    displayData:
+      sortBy: alphabetical
+      rows: 1
+      cols: 1
+      collapsed: true
+      hideForGuests: false
+    items:
+      - &ref_36
+        title: Dicas Cyber
+        description: Alessandro Barreto
+        url: https://www.delbarreto.app/p%C3%A1gina-inicial
+        target: newtab
+        id: 0_652_dicascyber
+    filteredItems:
+      - *ref_36
