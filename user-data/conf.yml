@@ -442,3 +442,43 @@ sections:
     filteredItems:
       - *ref_36
     icon: fas fa-cubes
+  - name: Notícias Cyber
+    icon: fas fa-newspaper
+    displayData:
+      sortBy: alphabetical
+      rows: 1
+      cols: 1
+      collapsed: true
+      hideForGuests: false
+    items:
+      - &ref_37
+        title: CISO Advisor
+        icon: fas fa-shield-alt
+        url: https://www.cisoadvisor.com.br/
+        target: newtab
+        id: 0_1491_cisoadvisor
+      - &ref_38
+        title: Cybersecbrazil
+        icon: >-
+          https://static.wixstatic.com/media/09ac2a_b04efdae2a4643cba7a083a08dae199b%7Emv2.png/v1/fill/w_32%2Ch_32%2Clg_1%2Cusm_0.66_1.00_0.01/09ac2a_b04efdae2a4643cba7a083a08dae199b%7Emv2.png
+        url: https://www.cybersecbrazil.com.br/
+        target: newtab
+        id: 1_1491_cybersecbrazil
+      - &ref_39
+        title: BoletimSec
+        icon: >-
+          https://boletimsec.com/wp-content/uploads/2021/12/icone-boletimsec-min-150x150.png
+        url: https://boletimsec.com/
+        target: newtab
+        id: 2_1491_boletimsec
+      - &ref_40
+        title: The Hacker News
+        icon: https://thehackernews.com/downloads/favicon.ico
+        url: https://thehackernews.com/
+        target: newtab
+        id: 3_1491_thehackernews
+    filteredItems:
+      - *ref_37
+      - *ref_38
+      - *ref_39
+      - *ref_40
