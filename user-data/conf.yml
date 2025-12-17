@@ -436,6 +436,8 @@ sections:
       - &ref_36
         title: Dicas Cyber
         description: Alessandro Barreto
+        icon: >-
+          https://sitedefender.com.br/wp-content/uploads/2022/03/Logotipo-Branco-Sitedefender.svg
         url: https://www.delbarreto.app/p%C3%A1gina-inicial
         target: newtab
         id: 0_652_dicascyber
