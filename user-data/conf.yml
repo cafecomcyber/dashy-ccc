@@ -441,3 +441,4 @@ sections:
         id: 0_652_dicascyber
     filteredItems:
       - *ref_36
+    icon: fas fa-cubes
