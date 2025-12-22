@@ -4,7 +4,7 @@ pageInfo:
   navLinks:
     - title: Voltar pro Site
       path: https://www.cafecomcyber.com.br/
-      target: sametab
+      target: top
     - title: Linktr.ee
       path: https://linktr.ee/cafecomcyber
       target: newtab
