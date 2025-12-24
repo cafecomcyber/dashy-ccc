@@ -11,7 +11,7 @@ pageInfo:
     - title: Gerador de Senhas
       path: https://www.cafecomcyber.com.br/gerador-de-senhas/
       target: newtab
-  logo: /favicon.ico
+  logo: /public/favicon.ico
   footerText: CCC | 2025
 appConfig:
   theme: default
