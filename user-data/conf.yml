@@ -8,9 +8,6 @@ pageInfo:
     - title: Linktr.ee
       path: https://linktr.ee/cafecomcyber
       target: newtab
-    - title: Gerador de Senhas
-      path: https://www.cafecomcyber.com.br/gerador-de-senhas/
-      target: newtab
   logo: https://www.cafecomcyber.com.br/favicon.ico
   footerText: CCC | 2025
 appConfig:
