@@ -238,6 +238,12 @@ sections:
         url: https://soctoolkit.com/
         target: newtab
         id: 7_397_soctoolkit
+      - &ref_21
+        title: Search IntelTechniques
+        icon: https://inteltechniques.com/favicon.ico
+        url: https://inteltechniques.com/tools/Search.html
+        target: newtab
+        id: 8_397_searchinteltechniques
     filteredItems:
       - *ref_13
       - *ref_14
@@ -247,6 +253,7 @@ sections:
       - *ref_18
       - *ref_19
       - *ref_20
+      - *ref_21
   - name: Services Status
     icon: fas fa-check-circle
     displayData:
@@ -256,43 +263,43 @@ sections:
       collapsed: true
       hideForGuests: false
     items:
-      - &ref_21
+      - &ref_22
         title: Downdetector
         icon: https://cdn2.downdetector.com/db9da631acf98de/icons/favicon.png
         url: https://downdetector.com.br/
         target: newtab
         id: 0_1512_downdetector
-      - &ref_22
+      - &ref_23
         title: Microsoft
         icon: fab fa-microsoft
         url: https://status.cloud.microsoft/
         target: newtab
         id: 1_1512_microsoft
-      - &ref_23
+      - &ref_24
         title: Ping.pe
         icon: >-
           https://img.icons8.com/?size=100&id=kYEPh3U5Cod0&format=png&color=000000
         url: https://ping.pe/
         target: newtab
         id: 2_1512_pingpe
-      - &ref_24
+      - &ref_25
         title: Status ix.br
         icon: https://ix.br/favicon.ico
         url: https://ix.br/trafego/agregado
         target: newtab
         id: 3_1512_statusixbr
-      - &ref_25
+      - &ref_26
         title: Outage Report
         icon: https://outage.report/static/orep-favicon-144x144.png
         url: https://outage.report/
         target: newtab
         id: 4_1512_outagereport
     filteredItems:
-      - *ref_21
       - *ref_22
       - *ref_23
       - *ref_24
       - *ref_25
+      - *ref_26
   - name: Troubleshooting
     icon: fas fa-tools
     displayData:
@@ -302,7 +309,7 @@ sections:
       collapsed: true
       hideForGuests: false
     items:
-      - &ref_26
+      - &ref_27
         title: vmPing
         description: Network Tools
         icon: >-
@@ -310,14 +317,14 @@ sections:
         url: https://github.com/r-smith/vmPing
         target: newtab
         id: 0_1608_vmping
-      - &ref_27
+      - &ref_28
         title: Procmon Sysinternals
         description: System / Process Tools
         icon: https://learn.microsoft.com/favicon.ico
         url: https://learn.microsoft.com/pt-br/sysinternals/downloads/procmon
         target: newtab
         id: 1_1608_procmonsysinternals
-      - &ref_28
+      - &ref_29
         title: Apêndice L
         description: Monitoring & Logs
         icon: https://learn.microsoft.com/favicon.ico
@@ -326,9 +333,9 @@ sections:
         target: newtab
         id: 2_1608_apndicel
     filteredItems:
-      - *ref_26
       - *ref_27
       - *ref_28
+      - *ref_29
   - name: Learning
     icon: fas fa-book
     displayData:
@@ -338,7 +345,7 @@ sections:
       collapsed: true
       hideForGuests: false
     items:
-      - &ref_29
+      - &ref_30
         title: pwn.college
         icon: >-
           https://pwn.college/themes/dojo_theme/static/img/favicon.png?d=810ada56
@@ -346,7 +353,7 @@ sections:
         target: newtab
         id: 0_816_pwncollege
     filteredItems:
-      - *ref_29
+      - *ref_30
   - name: Reputação
     icon: fas fa-chart-bar
     displayData:
@@ -356,7 +363,7 @@ sections:
       collapsed: true
       hideForGuests: false
     items:
-      - &ref_30
+      - &ref_31
         title: Abuseipdb
         description: Consulta de report de abuso de IPs
         icon: https://www.abuseipdb.com/favicon.ico
@@ -365,7 +372,7 @@ sections:
         tags:
           - osint
         id: 0_1194_abuseipdb
-      - &ref_31
+      - &ref_32
         title: VirusTotal
         description: Análise de arquivos e URL para verificar malwares e reputação
         icon: https://www.virustotal.com/gui/images/favicon.svg
@@ -374,7 +381,7 @@ sections:
         tags:
           - osint
         id: 1_1194_virustotal
-      - &ref_32
+      - &ref_33
         title: BrightCloud
         description: Consulta de reputação de IPs
         icon: >-
@@ -385,9 +392,9 @@ sections:
           - osint
         id: 2_1194_brightcloud
     filteredItems:
-      - *ref_30
       - *ref_31
       - *ref_32
+      - *ref_33
   - name: Whois
     icon: fas fa-search
     displayData:
@@ -397,7 +404,7 @@ sections:
       collapsed: true
       hideForGuests: false
     items:
-      - &ref_33
+      - &ref_34
         title: DomainTools
         icon: https://whois.domaintools.com/favicon.ico
         url: https://whois.domaintools.com/
@@ -405,30 +412,30 @@ sections:
         tags:
           - whois
         id: 0_522_domaintools
-      - &ref_34
+      - &ref_35
         title: Registro.br
         description: Whois do Registro.br
         icon: https://nic.br//docs-assets/images/logo-nicbr.png
         url: https://registro.br/tecnologia/ferramentas/whois/
         target: newtab
         id: 1_522_registrobr
-      - &ref_35
+      - &ref_36
         title: Whois.com
         icon: https://www.whois.com/favicon.ico
         url: https://www.whois.com/whois/
         target: newtab
         id: 2_522_whoiscom
-      - &ref_36
+      - &ref_37
         title: Mark Monitor
         icon: https://whois-webform.markmonitor.com/favicon.ico
         url: https://whois-webform.markmonitor.com/whois/
         target: newtab
         id: 3_522_markmonitor
     filteredItems:
-      - *ref_33
       - *ref_34
       - *ref_35
       - *ref_36
+      - *ref_37
   - name: Outros
     displayData:
       sortBy: alphabetical
@@ -437,7 +444,7 @@ sections:
       collapsed: true
       hideForGuests: false
     items:
-      - &ref_37
+      - &ref_38
         title: Dicas Cyber
         description: Alessandro Barreto
         icon: >-
@@ -446,7 +453,7 @@ sections:
         target: newtab
         id: 0_652_dicascyber
     filteredItems:
-      - *ref_37
+      - *ref_38
     icon: fas fa-cubes
   - name: Notícias Cyber
     icon: fas fa-newspaper
@@ -457,34 +464,34 @@ sections:
       collapsed: true
       hideForGuests: false
     items:
-      - &ref_38
+      - &ref_39
         title: CISO Advisor
         icon: fas fa-shield-alt
         url: https://www.cisoadvisor.com.br/
         target: newtab
         id: 0_1491_cisoadvisor
-      - &ref_39
+      - &ref_40
         title: Cybersecbrazil
         icon: >-
           https://static.wixstatic.com/media/09ac2a_b04efdae2a4643cba7a083a08dae199b%7Emv2.png/v1/fill/w_32%2Ch_32%2Clg_1%2Cusm_0.66_1.00_0.01/09ac2a_b04efdae2a4643cba7a083a08dae199b%7Emv2.png
         url: https://www.cybersecbrazil.com.br/
         target: newtab
         id: 1_1491_cybersecbrazil
-      - &ref_40
+      - &ref_41
         title: BoletimSec
         icon: >-
           https://boletimsec.com/wp-content/uploads/2021/12/icone-boletimsec-min-150x150.png
         url: https://boletimsec.com/
         target: newtab
         id: 2_1491_boletimsec
-      - &ref_41
+      - &ref_42
         title: The Hacker News
         icon: https://thehackernews.com/downloads/favicon.ico
         url: https://thehackernews.com/
         target: newtab
         id: 3_1491_thehackernews
     filteredItems:
-      - *ref_38
       - *ref_39
       - *ref_40
       - *ref_41
+      - *ref_42
