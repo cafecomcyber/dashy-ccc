@@ -505,8 +505,15 @@ sections:
         url: https://thehackernews.com/
         target: newtab
         id: 3_1491_thehackernews
+      - &ref_45
+        title: TecMundo
+        icon: https://www.tecmundo.com.br/favicon.ico
+        url: https://www.tecmundo.com.br/seguranca
+        target: newtab
+        id: 4_1491_tecmundo
     filteredItems:
       - *ref_41
       - *ref_42
       - *ref_43
       - *ref_44
+      - *ref_45
