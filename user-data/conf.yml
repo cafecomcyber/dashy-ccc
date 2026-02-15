@@ -55,7 +55,7 @@ appConfig:
   preventWriteToDisk: false
   preventLocalSave: false
   disableConfiguration: true
-  disableConfigurationForNonAdmin: true
+  disableConfigurationForNonAdmin: false
   allowConfigEdit: false
   enableServiceWorker: false
   disableContextMenu: false
