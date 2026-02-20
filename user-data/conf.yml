@@ -54,7 +54,7 @@ appConfig:
   showSplashScreen: false
   preventWriteToDisk: false
   preventLocalSave: false
-  disableConfiguration: false
+  disableConfiguration: true
   disableConfigurationForNonAdmin: true
   allowConfigEdit: false
   enableServiceWorker: false
@@ -183,6 +183,25 @@ sections:
         url: gemini.google.com
         target: newtab
         id: 7_138_gemini
+      - &ref_15
+        title: Deepseek
+        icon: https://www.deepseek.com/favicon.ico
+        url: https://www.deepseek.com/
+        target: newtab
+        id: 8_138_deepseek
+      - &ref_16
+        title: Lovable dev
+        description: ''
+        icon: https://lovable.dev/favicon.ico
+        url: https://lovable.dev/
+        target: newtab
+        id: 9_138_lovabledev
+      - &ref_17
+        title: Cursor dev
+        icon: https://cursor.com/favicon.ico
+        url: https://cursor.com/
+        target: newtab
+        id: 10_138_cursordev
     filteredItems:
       - *ref_7
       - *ref_8
@@ -192,6 +211,9 @@ sections:
       - *ref_12
       - *ref_13
       - *ref_14
+      - *ref_15
+      - *ref_16
+      - *ref_17
   - name: OSINT
     icon: fas fa-user-secret
     displayData:
@@ -201,46 +223,46 @@ sections:
       collapsed: true
       hideForGuests: false
     items:
-      - &ref_15
+      - &ref_18
         title: Shodan
         description: ''
         icon: https://www.shodan.io/static/img/favicon-60c1b1cd.png
         url: https://www.shodan.io/
         target: newtab
         id: 0_397_shodan
-      - &ref_16
+      - &ref_19
         title: IP Checker Info
         description: ''
         icon: https://ip-checker.info/favicon.ico
         url: https://ip-checker.info/
         target: newtab
         id: 1_397_ipcheckerinfo
-      - &ref_17
+      - &ref_20
         title: Web-check
         description: ''
         icon: https://web-check.xyz/favicon.ico
         url: https://web-check.xyz/
         target: newtab
         id: 2_397_webcheck
-      - &ref_18
+      - &ref_21
         title: Urlscan.io
         icon: https://urlscan.io/favicon.ico
         url: https://urlscan.io
         target: newtab
         id: 3_397_urlscanio
-      - &ref_19
+      - &ref_22
         title: Fofa Info
         icon: https://en.fofa.info/favicon.ico
         url: https://en.fofa.info/
         target: newtab
         id: 4_397_fofainfo
-      - &ref_20
+      - &ref_23
         title: Find osint tool
         icon: https://find.osint-tool.com/favicon.ico
         url: https://find.osint-tool.com/
         target: newtab
         id: 5_397_findosinttool
-      - &ref_21
+      - &ref_24
         title: awesome-osint
         icon: https://github.com/favicon.ico
         url: https://github.com/jivoi/awesome-osint
@@ -248,28 +270,28 @@ sections:
         tags:
           - osint
         id: 6_397_awesomeosint
-      - &ref_22
+      - &ref_25
         title: SOC Toolkit
         icon: https://soctoolkit.com/favicon.ico
         url: https://soctoolkit.com/
         target: newtab
         id: 7_397_soctoolkit
-      - &ref_23
+      - &ref_26
         title: Search IntelTechniques
         icon: https://inteltechniques.com/favicon.ico
         url: https://inteltechniques.com/tools/Search.html
         target: newtab
         id: 8_397_searchinteltechniques
     filteredItems:
-      - *ref_15
-      - *ref_16
-      - *ref_17
       - *ref_18
       - *ref_19
       - *ref_20
       - *ref_21
       - *ref_22
       - *ref_23
+      - *ref_24
+      - *ref_25
+      - *ref_26
   - name: Services Status
     icon: fas fa-check-circle
     displayData:
@@ -279,43 +301,43 @@ sections:
       collapsed: true
       hideForGuests: false
     items:
-      - &ref_24
+      - &ref_27
         title: Downdetector
         icon: https://cdn2.downdetector.com/db9da631acf98de/icons/favicon.png
         url: https://downdetector.com.br/
         target: newtab
         id: 0_1512_downdetector
-      - &ref_25
+      - &ref_28
         title: Microsoft
         icon: fab fa-microsoft
         url: https://status.cloud.microsoft/
         target: newtab
         id: 1_1512_microsoft
-      - &ref_26
+      - &ref_29
         title: Ping.pe
         icon: >-
           https://img.icons8.com/?size=100&id=kYEPh3U5Cod0&format=png&color=000000
         url: https://ping.pe/
         target: newtab
         id: 2_1512_pingpe
-      - &ref_27
+      - &ref_30
         title: Status ix.br
         icon: https://ix.br/favicon.ico
         url: https://ix.br/trafego/agregado
         target: newtab
         id: 3_1512_statusixbr
-      - &ref_28
+      - &ref_31
         title: Outage Report
         icon: https://outage.report/static/orep-favicon-144x144.png
         url: https://outage.report/
         target: newtab
         id: 4_1512_outagereport
     filteredItems:
-      - *ref_24
-      - *ref_25
-      - *ref_26
       - *ref_27
       - *ref_28
+      - *ref_29
+      - *ref_30
+      - *ref_31
   - name: Troubleshooting
     icon: fas fa-tools
     displayData:
@@ -325,7 +347,7 @@ sections:
       collapsed: true
       hideForGuests: false
     items:
-      - &ref_29
+      - &ref_32
         title: vmPing
         description: Network Tools
         icon: >-
@@ -333,14 +355,14 @@ sections:
         url: https://github.com/r-smith/vmPing
         target: newtab
         id: 0_1608_vmping
-      - &ref_30
+      - &ref_33
         title: Procmon Sysinternals
         description: System / Process Tools
         icon: https://learn.microsoft.com/favicon.ico
         url: https://learn.microsoft.com/pt-br/sysinternals/downloads/procmon
         target: newtab
         id: 1_1608_procmonsysinternals
-      - &ref_31
+      - &ref_34
         title: Apêndice L
         description: Monitoring & Logs
         icon: https://learn.microsoft.com/favicon.ico
@@ -349,9 +371,9 @@ sections:
         target: newtab
         id: 2_1608_apndicel
     filteredItems:
-      - *ref_29
-      - *ref_30
-      - *ref_31
+      - *ref_32
+      - *ref_33
+      - *ref_34
   - name: Learning
     icon: fas fa-book
     displayData:
@@ -361,20 +383,20 @@ sections:
       collapsed: true
       hideForGuests: false
     items:
-      - &ref_32
+      - &ref_35
         title: pwn.college
         icon: >-
           https://pwn.college/themes/dojo_theme/static/img/favicon.png?d=810ada56
         url: https://pwn.college/
         target: newtab
         id: 0_816_pwncollege
-      - &ref_33
+      - &ref_36
         title: Cursos
         icon: https://cafecomcyber.com.br/favicon.ico
         url: https://www.cafecomcyber.com.br/cursos
         target: newtab
         id: 1_816_cursos
-      - &ref_34
+      - &ref_37
         title: Hack&Fix
         description: Cybersecurity Training & Certifications
         icon: >-
@@ -382,7 +404,7 @@ sections:
         url: https://academy.hackandfix.com/
         target: newtab
         id: 2_816_hackfix
-      - &ref_35
+      - &ref_38
         title: Roadmap Cyber
         description: Step by step guide to becoming a Cyber Security Expert
         icon: https://roadmap.sh/manifest/favicon.ico
@@ -390,10 +412,10 @@ sections:
         target: newtab
         id: 3_816_roadmapcyber
     filteredItems:
-      - *ref_32
-      - *ref_33
-      - *ref_34
       - *ref_35
+      - *ref_36
+      - *ref_37
+      - *ref_38
   - name: Reputação
     icon: fas fa-chart-bar
     displayData:
@@ -403,7 +425,7 @@ sections:
       collapsed: true
       hideForGuests: false
     items:
-      - &ref_36
+      - &ref_39
         title: Abuseipdb
         description: Consulta de report de abuso de IPs
         icon: https://www.abuseipdb.com/favicon.ico
@@ -412,7 +434,7 @@ sections:
         tags:
           - osint
         id: 0_1194_abuseipdb
-      - &ref_37
+      - &ref_40
         title: VirusTotal
         description: Análise de arquivos e URL para verificar malwares e reputação
         icon: https://www.virustotal.com/gui/images/favicon.svg
@@ -421,7 +443,7 @@ sections:
         tags:
           - osint
         id: 1_1194_virustotal
-      - &ref_38
+      - &ref_41
         title: BrightCloud
         description: Consulta de reputação de IPs
         icon: >-
@@ -431,7 +453,7 @@ sections:
         tags:
           - osint
         id: 2_1194_brightcloud
-      - &ref_39
+      - &ref_42
         title: CIDR Abuse
         description: Consulta de IPs by:oseasfr
         icon: https://github.com/favicon.ico
@@ -439,10 +461,10 @@ sections:
         target: newtab
         id: 3_1194_cidrabuse
     filteredItems:
-      - *ref_36
-      - *ref_37
-      - *ref_38
       - *ref_39
+      - *ref_40
+      - *ref_41
+      - *ref_42
   - name: Whois
     icon: fas fa-search
     displayData:
@@ -452,7 +474,7 @@ sections:
       collapsed: true
       hideForGuests: false
     items:
-      - &ref_40
+      - &ref_43
         title: DomainTools
         icon: https://whois.domaintools.com/favicon.ico
         url: https://whois.domaintools.com/
@@ -460,30 +482,30 @@ sections:
         tags:
           - whois
         id: 0_522_domaintools
-      - &ref_41
+      - &ref_44
         title: Registro.br
         description: Whois do Registro.br
         icon: https://nic.br//docs-assets/images/logo-nicbr.png
         url: https://registro.br/tecnologia/ferramentas/whois/
         target: newtab
         id: 1_522_registrobr
-      - &ref_42
+      - &ref_45
         title: Whois.com
         icon: https://www.whois.com/favicon.ico
         url: https://www.whois.com/whois/
         target: newtab
         id: 2_522_whoiscom
-      - &ref_43
+      - &ref_46
         title: Mark Monitor
         icon: https://whois-webform.markmonitor.com/favicon.ico
         url: https://whois-webform.markmonitor.com/whois/
         target: newtab
         id: 3_522_markmonitor
     filteredItems:
-      - *ref_40
-      - *ref_41
-      - *ref_42
       - *ref_43
+      - *ref_44
+      - *ref_45
+      - *ref_46
   - name: Outros
     displayData:
       sortBy: alphabetical
@@ -492,7 +514,7 @@ sections:
       collapsed: true
       hideForGuests: false
     items:
-      - &ref_44
+      - &ref_47
         title: Dicas Cyber
         description: Alessandro Barreto
         icon: >-
@@ -500,7 +522,7 @@ sections:
         url: https://www.delbarreto.app/p%C3%A1gina-inicial
         target: newtab
         id: 0_652_dicascyber
-      - &ref_45
+      - &ref_48
         title: Excalidraw
         description: Whiteboard
         icon: https://excalidraw.com/favicon.ico
@@ -508,8 +530,8 @@ sections:
         target: newtab
         id: 1_652_excalidraw
     filteredItems:
-      - *ref_44
-      - *ref_45
+      - *ref_47
+      - *ref_48
     icon: fas fa-cubes
   - name: Notícias Cyber
     icon: fas fa-newspaper
@@ -520,41 +542,41 @@ sections:
       collapsed: true
       hideForGuests: false
     items:
-      - &ref_46
+      - &ref_49
         title: CISO Advisor
         icon: fas fa-shield-alt
         url: https://www.cisoadvisor.com.br/
         target: newtab
         id: 0_1491_cisoadvisor
-      - &ref_47
+      - &ref_50
         title: Cybersecbrazil
         icon: >-
           https://static.wixstatic.com/media/09ac2a_b04efdae2a4643cba7a083a08dae199b%7Emv2.png/v1/fill/w_32%2Ch_32%2Clg_1%2Cusm_0.66_1.00_0.01/09ac2a_b04efdae2a4643cba7a083a08dae199b%7Emv2.png
         url: https://www.cybersecbrazil.com.br/
         target: newtab
         id: 1_1491_cybersecbrazil
-      - &ref_48
+      - &ref_51
         title: BoletimSec
         icon: >-
           https://boletimsec.com/wp-content/uploads/2021/12/icone-boletimsec-min-150x150.png
         url: https://boletimsec.com/
         target: newtab
         id: 2_1491_boletimsec
-      - &ref_49
+      - &ref_52
         title: The Hacker News
         icon: https://thehackernews.com/downloads/favicon.ico
         url: https://thehackernews.com/
         target: newtab
         id: 3_1491_thehackernews
-      - &ref_50
+      - &ref_53
         title: TecMundo
         icon: https://www.tecmundo.com.br/favicon.ico
         url: https://www.tecmundo.com.br/seguranca
         target: newtab
         id: 4_1491_tecmundo
     filteredItems:
-      - *ref_46
-      - *ref_47
-      - *ref_48
       - *ref_49
       - *ref_50
+      - *ref_51
+      - *ref_52
+      - *ref_53
