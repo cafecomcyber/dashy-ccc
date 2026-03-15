@@ -421,7 +421,7 @@ sections:
         id: 3_1817_roadmapcyber
       - &ref_40
         title: Bondcore
-        description: ''
+        description: 'Educação digital gratuita para identificação de golpes'
         icon: fa solid fa-circle
         url: https://bondcore.com.br/
         target: newtab
