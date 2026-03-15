@@ -382,7 +382,7 @@ sections:
       - *ref_33
       - *ref_34
       - *ref_35
-  - name: Educação digital
+  - name: Estudos
     icon: fas fa-book
     displayData:
       sortBy: alphabetical
