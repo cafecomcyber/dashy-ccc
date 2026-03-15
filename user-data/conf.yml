@@ -421,7 +421,8 @@ sections:
         id: 3_1817_roadmapcyber
       - &ref_40
         title: Bondcore
-        icon: https://icons8.com.br/icon/Zyo5wDjgJxRW/red-circle
+        description: ''
+        icon: fa solid fa-circle
         url: https://bondcore.com.br/
         target: newtab
         id: 4_1817_bondcore
